@@ -1,0 +1,15 @@
+html>
+    <head>
+        <title>Title</title>
+    </head>
+    <body>
+        <h1><a href="/">Home</a></h1>
+        <hr>
+        <h2>
+            Artical Three
+        </h2>
+        <div>
+            <p>Content</p>
+        </div>
+    </body>
+</html>
