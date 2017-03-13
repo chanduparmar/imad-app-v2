@@ -17,6 +17,12 @@ app.get('/artical-two', function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
 });
 
+var counter = 0;
+app.get('/counter', function(req,res){
+     counter = counter + 1;
+     res.send(counter.toString());
+});
+
 app.get('/artical-three', function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'artical-three.html'));
 });
