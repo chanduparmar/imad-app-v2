@@ -7,7 +7,7 @@ var config = {
     databse : 'chanduparmar',
     host : 'db.imad.hasura-app.io',
     port : '5432',
-    password : 'chanduparmar'
+    password : 'db-chanduparmar-39499'
 };
 var app = express();
 app.use(morgan('combined'));
