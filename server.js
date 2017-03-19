@@ -29,12 +29,12 @@ app.get('/test-db', function(req,res){
     });
 });
 
-function hash(input,salt){
+function hash (input, salt){
     var hashed = crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
     return hashed.toString('hex');
 }
 
-app.get('hash/:input', function(){
+app.get('/hash/:input', function(){
     var hashString = hash(req.params.input,'this-is-random-value');
     res.send(hashString);
 });
